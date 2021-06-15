@@ -1,5 +1,6 @@
 import * as ko from 'knockout';
 require('knockout.validation');
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Person from './models/person';
 import PersonReadOnly from './components/PersonReadOnly';

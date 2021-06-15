@@ -21,13 +21,17 @@ module.exports = {
       {
         test: /\.html$/, // All Knockout.js component HTML templates
         use: 'html-loader' // Adds the component templates to the bundle
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
-    }),
+    })
   ],
   resolve: {
     extensions: ['.js', '.ts']
